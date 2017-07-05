@@ -24,12 +24,8 @@ class AplicacaoVacinas {
      //System.out.println("" + Values);
      //System.out.println("" + Values2);
      try{
-         String hostName = "kesleyserver";
-        String dbName = "postodesaude";
-        String user = "kesleyfortunato@kesleyserver";
-        String password = "@dfd7!39";
         String url;
-        url = "jdbc:sqlserver://kesleyserver.database.windows.net:1433;database=postodesaude;user=kesleyfortunato@kesleyserver;password={@dfd7!39};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
+        url = "jdbc:sqlserver://kesleyserver.database.windows.net:1433;database=<NOME_BANCODEDADOS>;user=<NOMEDEUSUARIO>;password={<SENHADEUSUARIO};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
         Connection connection = null;
         String myDriver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
         Class.forName(myDriver);
